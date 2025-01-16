@@ -1,16 +1,35 @@
-let numeroSecreto = 8;
-let numeroUsuario = prompt("Me indicas un numero entre 1 y 10 por favor: ");
+// variables
+let numeroSecreto = 5;
 
-console.log(numeroUsuario);
+let numeroUsuario = 0;
 
-/* este codigo realiza
-la comparacion
-*/
+let intentos = 1;  // variable intentos
 
-if (numeroUsuario == numeroSecreto) {
-    // acertamos que fue verdadera la condicion
-    alert(`Acertaste, el numero es: ${numeroUsuario}`); // interpolacion se realiza con comillas invertidas
-} else {
-    // la condicion no se cumplio
-    alert('Lo siento no acertaste el numero');
-} 
+let palabraVeces = 'vez'; 
+
+while (numeroUsuario != numeroSecreto) {
+
+    numeroUsuario = prompt("Me indicas un numero entre 1 y 10 por favor: ");
+
+    console.log(numeroUsuario);
+
+    /* este codigo realiza
+    la comparacion
+    */
+
+    if (numeroUsuario == numeroSecreto) {
+        // acertamos que fue verdadera la condicion
+        alert(`Acertaste, el numero es: ${numeroUsuario}. Lo realizaste en ${intentos} ${palabraVeces}.`); // interpolacion se realiza con comillas invertidas
+    } else {
+        if (numeroUsuario > numeroSecreto) {
+            alert('El numero secreto es menor');
+        } else {
+            alert('El numero secreto es mayor');
+        }
+        intentos = intentos + 1; // uso de la variable intentos y se le suma 1 si se repite el while hasta acertar
+        palabraVeces = 'veces'; // si es mas de una ves se emplea la palabra veces
+        // la condicion no se cumplio
+        // alert('Lo siento no acertaste el numero');
+    } 
+
+} // fin del while esto lo que hace es repetir el codigo hasta que se cumpla la condicion

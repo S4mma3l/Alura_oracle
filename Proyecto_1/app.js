@@ -28,6 +28,10 @@ while (numeroUsuario != numeroSecreto) {
         }
         intentos = intentos + 1; // uso de la variable intentos y se le suma 1 si se repite el while hasta acertar
         palabraVeces = 'veces'; // si es mas de una ves se emplea la palabra veces
+        if (intentos > 3) {
+            alert('llegaste al numero maximo de intentos');
+            break; // se termina el while
+        }
         // la condicion no se cumplio
         // alert('Lo siento no acertaste el numero');
     } 

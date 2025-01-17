@@ -10,7 +10,9 @@ let intentos = 1;  // variable intentos
 
 let palabraVeces = 'vez'; 
 
-let maximosIntentos = 3; // variable maximosIntentos
+let maximosIntentos = Math.floor(Math.random() *10) + 5; // variable maximosIntentos
+
+console.log(maximosIntentos);
 
 console.log(numeroSecreto);
 

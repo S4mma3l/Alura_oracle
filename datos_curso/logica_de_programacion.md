@@ -38,3 +38,6 @@ En la próxima lección:
 
     Aprendamos cómo evitar código duplicado y aplicar buenas prácticas de programación. Además, ¡generemos un número verdaderamente "aleatorio"!
 
+
+
+

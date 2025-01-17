@@ -1,5 +1,7 @@
 // variables
-let numeroSecreto = 5;
+// let numeroSecreto = 5; // original con un numero fijado por nosotros
+
+let numeroSecreto = Math.floor(Math.random() * 10) + 1; // numero aleatorio entre 1 y 10
 
 let numeroUsuario = 0;
 
@@ -7,11 +9,15 @@ let intentos = 1;  // variable intentos
 
 let palabraVeces = 'vez'; 
 
+let maximosIntentos = 3; // variable maximosIntentos
+
+console.log(numeroSecreto);
+
 while (numeroUsuario != numeroSecreto) {
 
-    numeroUsuario = prompt("Me indicas un numero entre 1 y 10 por favor: ");
+    numeroUsuario = parseInt(prompt("Me indicas un numero entre 1 y 10 por favor: ")); // con el parseInt se convierte el string en un numero entero
 
-    console.log(numeroUsuario);
+    console.log(typeof(numeroUsuario)); // con typeof se muestra el tipo de dato
 
     /* este codigo realiza
     la comparacion
@@ -20,6 +26,7 @@ while (numeroUsuario != numeroSecreto) {
     if (numeroUsuario == numeroSecreto) {
         // acertamos que fue verdadera la condicion
         alert(`Acertaste, el numero es: ${numeroUsuario}. Lo realizaste en ${intentos} ${palabraVeces}.`); // interpolacion se realiza con comillas invertidas
+        // alert(`Acertaste, el numero es: ${numeroUsuario}. Lo realizaste en ${intentos} ${intentos == 1 ? 'vez' : 'veces'}.`); // operador ternario
     } else {
         if (numeroUsuario > numeroSecreto) {
             alert('El numero secreto es menor');
@@ -27,9 +34,12 @@ while (numeroUsuario != numeroSecreto) {
             alert('El numero secreto es mayor');
         }
         intentos = intentos + 1; // uso de la variable intentos y se le suma 1 si se repite el while hasta acertar
+        // intentos += 1; // otra forma de escribir la linea anterior
+        // intentos++; // otra forma de escribir la linea anterior
+
         palabraVeces = 'veces'; // si es mas de una ves se emplea la palabra veces
-        if (intentos > 3) {
-            alert('llegaste al numero maximo de intentos');
+        if (intentos > maximosIntentos) {
+            alert(`llegaste al numero maximo de ${maximosIntentos} intentos`);
             break; // se termina el while
         }
         // la condicion no se cumplio

@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background: linear-gradient(45deg, #E17564, #BE3144, #872341, #09122C); /* Degradado de fondo */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background: linear-gradient(90deg, #FBF5DD, #A6CDC6, #16404D, #DDA853); 
+    padding: 20px;
+    border-radius: 50px; 
+    width: 80%; /* Ajusta el ancho del contenedor */
+    max-width: 1200px; /* Establece un ancho máximo */
+    height: 60vh; /* Ajusta la altura del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.logo {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    width: 100px; /* Ajusta el tamaño del logo según necesites */
+}

@@ -29,4 +29,26 @@ En la próxima aula:
 
     Aprenderemos qué son las funciones de manera práctica y cuál es su importancia en la carrera de desarrollo de software.
 
+En esta clase, se abordó la importancia de optimizar el código en JavaScript al trabajar con HTML. Se introdujo el concepto de funciones, específicamente la función asignarTextoElemento, que permite evitar la repetición de código al asignar texto a elementos HTML.
+
+Se explicó cómo declarar una función y cómo utilizar parámetros para hacerla más genérica, permitiendo que reciba diferentes elementos y textos cada vez que se llame. Esto no solo mejora la legibilidad del código, sino que también facilita su mantenimiento y escalabilidad a medida que el proyecto crece.
+
+Además, se mencionó el concepto de hoisting, que permite que las funciones sean llamadas antes de ser declaradas en el código. Al final, se mostró cómo la implementación de esta función reduce significativamente la cantidad de código necesario, haciendo que el desarrollo sea más eficiente y profesional.
+
+En resumen, la clase enfatizó la importancia de crear funciones reutilizables para optimizar el trabajo con JavaScript y HTML.
+
+###  Para saber más: funciones con JavaScript
+
+
+
+Las funciones juegan un papel central en la programación y en el desarrollo de software, permitiendo encapsular bloques de código reutilizables y ejecutables. Pueden ser definidas para realizar tareas específicas, desde cálculos simples hasta la manipulación compleja de datos. Las funciones en JavaScript pueden tener o no parámetros, así como devolver o no valores.
+Tipo de Función	Ejemplo de Código	Uso
+Sin retorno y sin parámetros	function saludo() { ... }	Ejecución de un bloque de código simple.
+Sin retorno y con parámetros	function saludar(nombre) { ... }	Ejecución de un bloque de código con argumentos.
+Con retorno y sin parámetros	function generarNumeroAleatorio() { ... }	Cálculo y retorno de un valor específico.
+Con retorno y con parámetros	function sumar(a, b) { ... }	Cálculo y retorno basado en argumentos.
+Función anónima	let saludo = function() { ... };	Definición de una función sin nombre localmente.
+Función flecha	let cuadrado = x => x * x;	Definición concisa de funciones cortas.
+
+Su uso es esencial para crear aplicaciones dinámicas, interactivas y eficientes en JavaScript. Sin embargo, no es necesario que crees todos los tipos de funciones en este momento. Sigue las lecciones y ten en cuenta que estas variaciones existen, y a medida que surja la necesidad, profundizaremos cada vez más en la lógica y JavaScript.
 

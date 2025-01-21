@@ -156,3 +156,116 @@ Además, estas habilidades son altamente valoradas en el mercado laboral, ya que
 
 Si deseas obtener más información sobre las características de estas tres tecnologías, Rafa Ballerini escribió un artículo que enfatiza estas diferencias.
 
+Suponga que estás desarrollando una nueva función para Playcatch, el "Spotify" de Alura. Tu tarea es mostrar un texto especial en la pantalla principal del usuario siempre que agreguen una nueva canción a su lista de reproducción. Para hacerlo, necesitas cambiar el texto de un elemento HTML utilizando JavaScript.
+
+¿Cómo puedes cambiar el texto del elemento h2 en tu página a "Has agregado una nueva canción!" usando los conceptos del curso "Lógica de programación: explore funciones y listas"?
+
+    Alternativa correta
+
+    let h2 = document.getElementsByClassName('h2');
+    h2.innerHTML = 'Has agregado una nueva canción!';
+
+Alternativa correta
+
+let h2 = document.querySelector('h2');
+h2.innerHTML = 'Se ha añadido una nueva canción!';
+
+Alternativa correta
+
+let h2 = document.querySelector('h2');
+h2.innerHTML = 'Has agregado una nueva canción!';
+
+Al seleccionar el elemento h2 con el método querySelector y cambiar el texto con innerHTML, estás utilizando correctamente los conceptos enseñados en el curso.
+Alternativa correta
+
+let h2 = document.querySelector('h1');
+h2.innerHTML = 'Has agregado una nueva canción!';
+
+### Anatomía de una función
+
+La anatomía de una función en JavaScript está compuesta por diversas partes que definen su comportamiento. Es importante comprender estos elementos para crear funciones reutilizables y modularizar el código de manera eficiente.
+
+Por lo tanto, conocer la estructura de las funciones en JavaScript es fundamental para dominar el lenguaje y desarrollar aplicaciones complejas de manera organizada y funcional.
+
+Con base en lo que vimos en esta lección, analiza las siguientes afirmaciones y marca solo las opciones verdaderas sobre funciones.
+
+    Alternativa correta
+
+    Palabra clave function: Se utiliza para declarar una función en JavaScript.
+
+Toda función en JavaScript se declara utilizando la palabra clave "function". Esta palabra clave se utiliza para crear una función.
+Alternativa correta
+
+Las funciones en JavaScript pueden tener un nombre.
+
+Las funciones en JavaScript pueden tener un nombre. De hecho, es una práctica común dar un nombre descriptivo a las funciones para facilitar la lectura y comprensión del código. Estos nombres se utilizan para llamar a la función posteriormente o hacer referencia a ella dentro del propio código, lo que te permite reutilizar la función en diferentes partes del programa.
+Alternativa correta
+
+Paréntesis (): Después del nombre de la función (si lo hay), los paréntesis se usan para definir los parámetros de la función.
+
+Los paréntesis en una función en JavaScript se utilizan para contener los argumentos que recibe la función, lo que permite pasar información a la función e influir en su comportamiento y resultados.
+Alternativa correta
+
+La palabra clave "return" es obligatoria: La palabra clave "return" se utiliza para especificar el valor que la función debe devolver después de ser ejecutada.
+Alternativa correta
+
+Cuerpo de la función []: El cuerpo de la función está delimitado por corchetes y contiene el código que se ejecutará cuando se llame a la función. 
+
+### Función que verifica números
+
+Eres un desarrollador de software que trabaja con JavaScript y necesitas crear una función que verifique si un número es positivo, negativo o cero. Tu tarea es implementar una función que reciba como parámetro un número entero y muestre un mensaje en la consola según las siguientes reglas:
+
+    Si el número es mayor que cero, el mensaje debe ser: "El número es positivo."
+    Si el número es menor que cero, el mensaje debe ser: "El número es negativo."
+    Si el número es igual a cero, el mensaje debe ser: "El número es cero."
+
+Puedes utilizar la estructura de control if-else para verificar las condiciones y mostrar el mensaje correspondiente en la consola.
+
+Analiza las siguientes alternativas y marca aquella que contiene el código que cumple con todas las reglas mencionadas anteriormente:
+
+    Alternativa correta
+
+    function verificarNumero(numero) {
+      if (numero > 0) {
+        console.log("El número es positivo.");
+      } else if (numero < 0) {
+        console.log("El número es negativo.");
+      } else {
+        console.log("El número es zero.");
+      }
+    }
+
+En este código, utilizamos la estructura de control if-else para verificar las tres posibilidades: si el número es mayor que cero, si es menor que cero o si es igual a cero. Dependiendo de la condición, la función imprime el mensaje correspondiente en la consola."
+Alternativa correta
+
+function verificarNumero(numero) {
+  if (numero < 0) {
+    console.log("El número es positivo.");
+  } else if (numero > 0) {
+    console.log("El número es negativo.");
+  } else {
+    console.log("El número es zero.");
+  }
+}
+
+Alternativa correta
+
+ if (numero > 0) {
+    console.log("El número es positivo.");
+  } else if (numero < 0) {
+    console.log("El número es negativo.");
+  } else {
+    console.log("El número es zero.");
+  }
+
+Alternativa correta
+
+ function verificarNumero(numero) {
+  if (numero > 0) {
+    console.log("El número es positivo.");
+  } else {
+    console.log("El número es zero.");
+  }
+}
+
+

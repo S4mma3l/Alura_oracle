@@ -1,17 +1,17 @@
 header {
   text-align: center;
   font-size: 30px;
-  color: #279EFF;
+  color: #09122C;
 }
 
 main, html {
   margin: 0;
   padding: 0;
-  height: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0C356A;
+  background: linear-gradient(120deg, #E17564, #BE3144, #872341, #09122C);
 }
 
 .container {
@@ -24,11 +24,11 @@ main, html {
   margin: 10px;
   font-size: 24px;
   border: none;
-  background-color: #3498db;
+  background-color: #BE3144;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .button:hover {
-  background-color: #2980b9;
+  background: linear-gradient(45deg, #E17564, #BE3144, #872341, #09122C);
 }

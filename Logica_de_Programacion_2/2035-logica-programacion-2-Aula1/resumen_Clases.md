@@ -76,3 +76,31 @@ Además, se activó un botón de "nuevo juego" que inicialmente está deshabilit
 
 Se enfatizó la importancia de los comentarios en el código y se mostró cómo simplificar el código eliminando variables innecesarias. La clase concluyó con la preparación para implementar la funcionalidad del botón de reinicio en la próxima sesión.
 
+### Funcion reiniciar juego
+
+En esta clase, se abordó la implementación de un botón de "Nuevo Juego" en un juego, utilizando la función reiniciarJuego. Se explicó que al presionar el botón, se debe llamar a esta función, que aún no estaba definida, pero se comenzó a construir.
+
+La función reiniciarJuego tiene como objetivo reiniciar el juego desde cero, lo que implica varias acciones:
+
+    Limpiar la caja de texto utilizando la función limpiarCaja.
+    Mostrar mensajes iniciales, como el título y el rango de números, a través de una nueva función llamada condicionesIniciales.
+    Generar un nuevo número aleatorio.
+    Reiniciar el número de intentos a 1.
+    Deshabilitar el botón de "Nuevo Juego" para evitar que se pueda reiniciar el juego en medio de una partida.
+
+Se enfatizó la importancia de organizar el código y utilizar comentarios para clarificar las acciones de la función. Además, se discutió sobre la mejora continua del código, como renombrar funciones para reflejar mejor su propósito.
+
+Finalmente, se probó la funcionalidad del nuevo botón, asegurándose de que todas las condiciones iniciales se restablecieran correctamente al iniciar un nuevo juego. La clase concluyó con la idea de que se pueden seguir haciendo mejoras en el juego en futuras lecciones.
+
+
+
+En esta aula:
+
+    Aprendimos cómo crear un programa para verificar si el 'intento' ingresado es igual al número secreto definido.Utilizamos estructuras condicionales para tomar decisiones basadas en el resultado de esta comparación;
+    Creamos una variable para almacenar la cantidad de intentos realizados por el usuario;
+    Hemos visto la importancia de consultar la documentación del lenguaje y las bibliotecas utilizadas en el desarrollo del programa. La documentación es una fuente valiosa de información que nos ayuda a comprender conceptos y a utilizar correctamente las funcionalidades disponibles.
+
+En la próxima aula:
+
+    Vamos a aprender cómo funcionan las listas (o arrays, en inglés) y cuán fundamentales son en la carrera de desarrollo de software.
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío #3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <img src="img/logo.png" alt="Logo" class="logo">
+
+        <h2>Calculadora de IMC</h2>
+        <label for="altura">Altura (metros):</label>
+        <input type="number" id="altura"><br>
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso"><br>
+        <button onclick="calcularIMC()">Calcular IMC</button>
+        <p id="resultadoIMC"></p>
+
+        <h2>Calculadora de Factorial</h2>
+        <label for="numeroFactorial">Número:</label>
+        <input type="number" id="numeroFactorial"><br>
+        <button onclick="calcularFactorial()">Calcular Factorial</button>
+        <p id="resultadoFactorial"></p>
+
+        <h2>Conversor de Moneda</h2>
+        <label for="colones">Colones:</label>
+        <input type="number" id="colones"><br>
+        <button onclick="convertirDolares()">Convertir a Dólares</button>
+        <p id="resultadoDolares"></p>
+
+        <h2>Calculadora de Perímetro</h2>
+        <label for="largo">Largo (metros):</label>
+        <input type="number" id="largo"><br>
+        <label for="ancho">Ancho (metros):</label>
+        <input type="number" id="ancho"><br>
+        <button onclick="calcularPerimetro()">Calcular Perímetro</button>
+        <p id="resultadoPerimetro"></p>
+
+        <h2>Calculadora de Circunferencia</h2>
+        <label for="radio">Radio (metros):</label>
+        <input type="number" id="radio"><br>
+        <button onclick="calcularCircunferencia()">Calcular Área y Perímetro</button>
+        <p id="resultadoCircunferencia"></p>
+
+        <h2>Tabla de Multiplicar</h2>
+        <label for="tablaNumero">Número:</label>
+        <input type="number" id="tablaNumero"><br>
+        <button onclick="mostrarTabla()">Mostrar Tabla</button>
+        <div id="resultadoTabla"></div>
+    </div>
+
+    <script src="desafio_mejorado_3.js"></script> </body>
+</html>

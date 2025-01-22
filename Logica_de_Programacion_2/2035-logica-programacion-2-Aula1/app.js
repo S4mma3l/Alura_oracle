@@ -7,10 +7,10 @@ parrafo.innerHTML = 'Indica un número del 1 al 10';  /* esta es una forma de as
 pero no es practico, en codigo donde se debe de repetir varias veces, por eso se crea una funcion 
 */
 
-let numeroSecreto = generarNumeroSecreto();
+let numeroSecreto = 0;
 console.log(numeroSecreto);
 
-let intentos = 1;
+let intentos = 0;
 
 function asignarTextoElemento(elemento, texto) {
     let elementoHTML = document.querySelector(elemento);
@@ -51,5 +51,22 @@ function generarNumeroSecreto() {
     return Math.floor(Math.random()*10)+1; /* variable para generar un numero aleatorio entre 1 y 10 */
 }
 
-asignarTextoElemento('h1', 'Bienvenido al mucho DEV')
-asignarTextoElemento('p', 'Indica un numero del 1 al 10')
+function condicionesIniciales() {
+    asignarTextoElemento('h1', 'Bienvenido al mucho DEV');
+    asignarTextoElemento('p', 'Indica un numero del 1 al 10');
+    numeroSecreto = generarNumeroSecreto();
+    intentos = 1;
+}
+
+function reiniciarJuego() {
+    // limpiar la caja de texto
+    limpiarCaja();
+    // indicar mensaje de intervalo de numeros 
+    // generar un nuevo numero secreto
+    // inicializar los intentos
+    condicionesIniciales();
+    // deshabilitar el boton de reiniciar
+    document.querySelector('#reiniciar').setAttribute('disabled', true); /* se deshabilita el boton */
+}
+
+condicionesIniciales(); /* se llama la funcion para que se ejecute */

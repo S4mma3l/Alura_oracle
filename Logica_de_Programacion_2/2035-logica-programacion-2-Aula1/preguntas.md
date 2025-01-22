@@ -311,3 +311,77 @@ function verificarAprobacion(promedio){
 
 ¡Exacto! La función verifica si el promedio pasado como parámetro es mayor o igual a 5 y devuelve un valor en formato de texto que informa si fue aprobado o reprobado.
 
+### Adapta función
+
+En nuestra clase anterior, exploramos la función 'reiniciarJuego' y aprendimos a organizar nuestro código utilizando comentarios para guiar nuestras acciones paso a paso. Ahora, te presentamos un desafío práctico para poner en práctica tus conocimientos sobre el uso de funciones y buenas prácticas de programación.
+
+El siguiente código en JavaScript calcula el doble y el triple de un número proporcionado. Tu tarea consiste en seleccionar las opciones que sigan las mejores prácticas de programación y ayuden a mejorar la legibilidad y mantenibilidad del código.
+
+function calcularDobleTriple(numero) {
+  const doble = numero * 2;
+  const triple = numero * 3;
+
+  return `El doble de ${numero} es ${doble} y el triple es ${triple}.`;
+}
+
+const numero = 5;
+const resultado = calcularDobleTriple(numero);
+console.log(resultado);
+
+    Alternativa correta
+
+    function calcularDobleTriple(numero) {
+      return numero * 2 + " es el doble y " + numero * 3 + " es el triple.";
+    }
+
+    const numero = 5;
+    const resultado = calcularDobleTriple(numero);
+    console.log(resultado);
+
+Alternativa correta
+
+function calcularDoble(numero) {
+  return numero * 2;
+}
+
+function calcularTriple(numero) {
+  return numero * 3;
+}
+
+const numero = 5;
+const doble = calcularDoble(numero);
+const triple = calcularTriple(numero);
+
+console.log(`El doble de ${numero} es ${doble} y el triple es ${triple}.`);
+
+Esta opción es correcta porque divide la funcionalidad en dos funciones separadas, calcularDoble y calcularTriple, lo que mejora la modularidad y facilita la comprensión del código. Además, utiliza variables explícitas (doble y triple) para almacenar los resultados, lo que hace que el código sea más legible.
+Alternativa correta
+
+function calcularDobleTriple(numero) {
+  const resultado = {};
+  resultado.doble = numero * 2;
+  resultado.triple = numero * 3;
+  return resultado;
+}
+
+const numero = 5;
+const resultado = calcularDobleTriple(numero);
+
+console.log(`El doble de ${numero} es ${resultado.doble} y el triple es ${resultado.triple}.`);
+
+### Para saber más: templates strings
+
+Los Template strings, o plantillas de cadenas, son características comunes en muchos lenguajes de programación y sistemas de plantillas. Estas plantillas ofrecen una manera eficiente de crear cadenas de texto donde es posible incluir marcadores o espacios reservados que posteriormente serán reemplazados por valores concretos. Estos marcadores, por lo general, se encuentran delimitados por caracteres especiales, como llaves, corchetes o signos de dólar, y desempeñan el papel de puntos de inserción para datos dinámicos.
+
+En la gran mayoría de los lenguajes de programación, Template strings simplifican la tarea de concatenar valores variables en una cadena, sin requerir concatenación manual de cadenas o conversiones explícitas de tipos. Esto contribuye a que el código sea más legible y menos propenso a errores, lo cual es particularmente valioso en diversas situaciones, como la generación de mensajes de usuario, la construcción de consultas SQL dinámicas o la creación de documentos HTML.
+
+Un ejemplo ilustrativo de esto se encuentra en JavaScript, donde puedes emplear las comillas invertidas (backticks) para crear plantillas de cadenas. Esto te permite incrustar expresiones dentro de la cadena utilizando el formato ${}. A continuación, un ejemplo práctico:
+
+const nombre = "Juan";
+const edad = 30;
+const mensaje = `Hola, soy ${nombre} y tengo ${edad} años.`;
+console.log(mensaje);
+
+// Salida: Hola, soy Juan y tengo 30 años.
+
+En este ejemplo, la plantilla de cadena permite insertar dinámicamente los valores de las variables nombre y edad en la cadena de texto.

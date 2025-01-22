@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background: linear-gradient(30deg, #E17564, #BE3144, #872341, #09122C);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    min-height: 100vh;
+}
+
+.contenedor {
+    background: linear-gradient(90deg, #1B1833, #441752, #AB4459, #F29F58);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    color: white; /* Texto blanco para contraste */
+}
+
+h2 {
+    font-weight: 500;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde blanco semitransparente */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
+    color: white; /* Texto blanco en los inputs */
+}
+
+button {
+    background-color: #fff; /* Botones blancos */
+    color: #333; /* Texto oscuro en los botones */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco más transparente al pasar el mouse */
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+}
+
+#resultadoTabla {
+  margin-top: 20px;
+}
+
+#resultadoTabla table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#resultadoTabla td, #resultadoTabla th {
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borde blanco semitransparente */
+  padding: 8px;
+  text-align: center;
+  color: white; /* Texto blanco en la tabla */
+}

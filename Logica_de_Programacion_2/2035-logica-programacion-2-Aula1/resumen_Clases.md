@@ -52,3 +52,27 @@ Función flecha	let cuadrado = x => x * x;	Definición concisa de funciones cort
 
 Su uso es esencial para crear aplicaciones dinámicas, interactivas y eficientes en JavaScript. Sin embargo, no es necesario que crees todos los tipos de funciones en este momento. Sigue las lecciones y ten en cuenta que estas variaciones existen, y a medida que surja la necesidad, profundizaremos cada vez más en la lógica y JavaScript.
 
+### Mensaje, si acerto
+
+En esta clase, se trabajó en la lógica de un juego donde se le indica a la persona usuaria si ha acertado un número secreto. Se revisó cómo utilizar condiciones en JavaScript para verificar si el número ingresado es igual, mayor o menor que el número secreto.
+
+Se explicó el uso de la función asignarTextoElemento para mostrar mensajes a la persona usuaria, indicando si acertó el número o dándole pistas sobre si el número secreto es mayor o menor. Se destacó la importancia de reutilizar funciones para optimizar el código, lo que facilita su mantenimiento y mejora la legibilidad. Al final, se realizó una prueba del juego, donde se ingresaron diferentes números para verificar su funcionamiento. 
+
+### Mensaje de numero de intentos
+
+En esta clase, se continuó el desarrollo de un juego en el que el usuario intenta adivinar un número. Se implementó una funcionalidad para contar cuántas veces el usuario ha intentado adivinar el número. Para ello, se creó una variable llamada numeroIntentos, que se inicializa en uno, ya que el usuario debe intentar al menos una vez.
+
+Cada vez que el usuario no acierta, se incrementa esta variable utilizando la forma abreviada ++. Además, se utilizó console.log para mostrar el número de intentos en la consola.
+
+Cuando el usuario finalmente acierta, se muestra un mensaje que indica cuántas veces intentó adivinar el número. Para esto, se emplearon template strings y el operador ternario para manejar la pluralidad de la palabra "vez". Si el número de intentos es uno, se muestra "vez", y si es más de uno, se muestra "veces".
+
+Finalmente, se probó el sistema, asegurando que funcionara correctamente y que el mensaje final reflejara adecuadamente el número de intentos realizados por el usuario. Se mencionó que aún hay mejoras por hacer, pero que el sistema básico ya está funcional.
+
+### Limpiar campo
+
+En esta clase, se abordó la mejora de un juego de adivinanza de números. Se discutió la necesidad de limpiar el campo de entrada después de cada intento fallido, para facilitar la experiencia del usuario. Para lograr esto, se creó una función llamada limpiarCaja, que utiliza document.querySelector o getElementById para seleccionar el campo de entrada y establecer su valor en una cadena vacía.
+
+Además, se activó un botón de "nuevo juego" que inicialmente está deshabilitado. Este botón se habilita solo cuando el usuario adivina el número correctamente, eliminando el atributo Disable del botón. Esto permite que el usuario inicie un nuevo juego sin problemas.
+
+Se enfatizó la importancia de los comentarios en el código y se mostró cómo simplificar el código eliminando variables innecesarias. La clase concluyó con la preparación para implementar la funcionalidad del botón de reinicio en la próxima sesión.
+

@@ -385,3 +385,65 @@ console.log(mensaje);
 // Salida: Hola, soy Juan y tengo 30 años.
 
 En este ejemplo, la plantilla de cadena permite insertar dinámicamente los valores de las variables nombre y edad en la cadena de texto.
+
+### Manipulacion de listas en JS
+
+Has sido encargado(a) de crear un pequeño programa para gestionar una lista de compras. El programa debe permitir que el usuario agregue elementos a la lista y luego mostrar el contenido de la lista en la pantalla. Además, el usuario debe poder ver un elemento específico de la lista ingresando el índice del elemento deseado.
+
+let listaCompras = [];
+
+listaCompras.push("Manzana");
+listaCompras.push("Arroz");
+listaCompras.push("Leche");
+listaCompras.push("Pan");
+listaCompras.push("Carne");
+
+Sabemos esto, analiza las siguientes afirmaciones y marca las 2 verdaderas:
+
+    Alternativa correta
+
+    listaCompras.lenght muestra la cantidad de elementos de una lista.
+
+Alternativa correta
+
+El código listaCompras[1] mostrará el elemento Manzana.
+Alternativa correta
+
+listaCompras.length muestra la cantidad de elementos de una lista.
+
+La propiedad "length" se utiliza para obtener la cantidad de elementos en una lista o array en JavaScript.
+Alternativa correta
+
+El código listaCompras[3] mostrará el elemento Pan.
+
+El código listaCompras[3] en realidad mostrará el elemento "Pan", ya que el índice 0 corresponde a "Manzana", 1 a "Arroz", 2 a "Leche" y 3 a "Pan".
+
+### Sorteando libros
+
+Contexto: Imagina que eres una persona desarrolladora que trabaja para Buscante, una importante tienda en línea de libros. Tu jefe te ha pedido que crees una función para sortear libros a los clientes. El sorteo debe hacerse de manera que todos los libros tengan la oportunidad de ser sorteados al menos una vez, y después de eso, el sorteo debe comenzar de nuevo. Recordaste la lección sobre la adición de la variable "numeroLimite" en el curso "Lógica de programación: explore funciones y listas". ¿Cómo implementarás el sorteo del libro teniendo en cuenta lo que se enseñó?
+
+    Alternativa correta
+
+    function sortearLibro() {
+        let libroElegido = Math.floor(Math.random() * listaDeLibros.length);
+        return listaDeLibros[libroElegido];
+    }
+
+Alternativa correta
+
+function sortearLibro() {
+    let libroElegido = parseInt(Math.random() * numeroLimite + 1);
+    let cantidadDeLibrosSorteados = listaDeLibrosSorteados.length;
+    if (cantidadDeLibrosSorteados == numeroLimite) {
+        listaDeLibrosSorteados = [];
+    }
+    // Código omitido
+}
+
+Correcta! Esta respuesta es correcta porque sigue la lógica enseñada en el curso de programación. En este código, se genera un número aleatorio para elegir un libro y luego se verifica si se ha alcanzado el límite de libros sorteados. Si es así, la lista de libros sorteados se reinicia para comenzar de nuevo el sorteo.
+Alternativa correta
+
+function sortearLibro() {
+    let libroElegido = listaDeLibros[numeroLimite];
+    return listaDeLibros[libroElegido];
+}

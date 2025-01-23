@@ -10,7 +10,11 @@ pero no es practico, en codigo donde se debe de repetir varias veces, por eso se
 let numeroSecreto = 0;
 console.log(numeroSecreto);
 
+let listaNumerosSorteados = [];
+
 let intentos = 0;
+
+let numeroMaximo = 10;
 
 function asignarTextoElemento(elemento, texto) {
     let elementoHTML = document.querySelector(elemento);
@@ -47,13 +51,31 @@ function limpiarCaja() {
     document.querySelector('#valorUsuario').value = '';
 }
 
-function generarNumeroSecreto() { 
-    return Math.floor(Math.random()*10)+1; /* variable para generar un numero aleatorio entre 1 y 10 */
+function generarNumeroSecreto() {
+    let numeroGenerado = Math.floor(Math.random()*numeroMaximo)+1; /* variable para generar un numero aleatorio entre 1 y 10 */
+
+    console.log(listaNumerosSorteados);
+    // si ya sorteamos todos los numero
+    if (listaNumerosSorteados.length == numeroMaximo) {
+        asignarTextoElemento('p', 'Ya se sortearon todos los numeros posibles');
+    } else {
+        //si el numero esta incluido en la lista
+        if (listaNumerosSorteados.includes(numeroGenerado)) {
+        // se vuelve a llamar a la funcion para que genere otro numero
+            return generarNumeroSecreto();
+        } else {
+            listaNumerosSorteados.push(numeroGenerado);
+            return numeroGenerado;
+        }
+    }
+    
+
+    
 }
 
 function condicionesIniciales() {
     asignarTextoElemento('h1', 'Bienvenido al mucho DEV');
-    asignarTextoElemento('p', 'Indica un numero del 1 al 10');
+    asignarTextoElemento('p', `Indica un numero del 1 al ${numeroMaximo}`);
     numeroSecreto = generarNumeroSecreto();
     intentos = 1;
 }

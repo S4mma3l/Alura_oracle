@@ -104,3 +104,60 @@ En la próxima aula:
 
     Vamos a aprender cómo funcionan las listas (o arrays, en inglés) y cuán fundamentales son en la carrera de desarrollo de software.
 
+### Arreglos
+
+
+
+En esta clase, se abordó el tema de las listas en JavaScript, específicamente los arreglos. Se destacó que JavaScript permite la creación de listas combinadas, aunque se recomienda mantener la homogeneidad en las listas, es decir, que todos los elementos sean del mismo tipo (cadenas, números, objetos, etc.).
+
+Se explicaron varias operaciones comunes con arreglos, como agregar elementos utilizando el método push, que permite añadir elementos al final de la lista. También se mencionó cómo obtener el tamaño de un arreglo con la propiedad length, enfatizando la importancia de escribirlo correctamente.
+
+Se discutió cómo acceder a los elementos de un arreglo mediante su índice, recordando que la numeración comienza en 0. Se mostró cómo obtener el primer y el último elemento de la lista, así como la importancia de conocer la última posición para evitar errores al acceder a índices no válidos.
+
+Finalmente, se mencionó que en la próxima clase se implementará una lógica para evitar que los números sorteados se repitan. Se alentó a los estudiantes a profundizar en la documentación de JavaScript para entender mejor el manejo de listas.
+Copiar texto de Luri al portapapeles
+
+### Arreglo recursividad
+
+En esta clase, se abordó el concepto de listas (arreglos) y su uso en la programación, específicamente en el contexto de un juego donde se generan números aleatorios. Se explicó cómo crear una lista para almacenar los números que ya han sido sorteados, utilizando el método push para agregar nuevos números a la lista.
+
+Se introdujo la condición if para verificar si un número generado ya está en la lista, utilizando el método includes, que devuelve un valor booleano. Si el número ya existe, se debe generar otro número, lo que se logra a través de la recursividad, permitiendo que la función se llame a sí misma hasta encontrar un número que no haya sido sorteado.
+
+Se destacó la importancia de la recursividad para evitar la creación de múltiples funciones y se advirtió sobre la necesidad de tener una condición de salida para evitar bucles infinitos. Finalmente, se realizaron pruebas en el código para verificar que el algoritmo funcionaba correctamente al generar números únicos hasta que se agotaron las opciones disponibles.
+Copiar texto de Luri al portapapeles
+
+### Resolviendo la Recursividad
+
+En esta clase, se abordó el tema de la recursividad y cómo manejar un problema común relacionado con ella: la falta de una condición de salida. Los instructores, Cristian y Leo, discutieron la importancia de establecer un límite para evitar que el programa se quede en un bucle infinito.
+
+Se introdujo la idea de utilizar una variable llamada "número máximo" para definir el rango de números que se pueden sortear en el juego. Se explicó cómo verificar si todos los números posibles ya han sido sorteados utilizando la función len() para comparar la longitud de la lista de números sorteados con el número máximo.
+
+Además, se implementó un mensaje que se muestra cuando todos los números han sido sorteados, y se desactiva el botón de "nuevo juego" para indicar que el juego ha terminado. Se sugirió como tarea adicional que los estudiantes implementen una variable que limite el número de intentos antes de reiniciar el juego, lo que también ayudaría a manejar la recursividad de manera más eficiente.
+
+### lo que aprendimos
+
+
+
+En esta aula:
+
+    Aprendimos a trabajar con listas en JavaScript, incluyendo cómo agregar elementos, obtener el tamaño de la lista, acceder a elementos específicos y la importancia de conocer la posición del último elemento. También destacamos la importancia de leer la documentación y comprender los conceptos relacionados con el manejo de listas en JavaScript.
+
+    La importancia de trabajar con funciones en la programación.
+
+    Cómo generar un número secreto a través de una función.
+
+    El uso del método push para almacenar el número generado al final de la lista.
+
+    Cómo verificar si un número ya existe en la lista utilizando el método includes de JavaScript.
+
+    La aplicación de la recursividad para generar un nuevo número válido.
+
+    Como implementar un límite en el juego para evitar el bucle infinito.
+
+    Como implementar una variable adicional para limitar la cantidad de veces que se puede jugar antes de reiniciar el juego.
+
+En la próxima aula:
+
+    Tendrás la oportunidad de poner en práctica todo el conocimiento que has adquirido resolviendo un desafío. ¡Hasta entonces, buena suerte!
+
+

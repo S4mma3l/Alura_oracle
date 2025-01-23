@@ -192,5 +192,5 @@ El primer paso para crear una cuenta en Vercel es acceder al sitio web de Vercel
 
 Después de hacer clic en 'Sing up', verás una página como esta:
 
-Luego, haz clic en 'Continue with GitHub' y listo, ¡tu cuenta ha sido creada! Ahora solo tienes que utilizar los servicios de Vercel :)
+Luego, haz clic en 'Continue with GitHub' y listo, ¡tu cuenta ha sido creada! Ahora solo tienes que utilizar los servicios de Vercel 
 

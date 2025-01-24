@@ -73,3 +73,12 @@ En la siguiente aula:
 
 ¡Sumerjámonos en el Mundo de GitHub, vamos a crear nuevos archivos y veremos cómo agregar una persona a nuestro proyecto!
 
+Aquí tienes un resumen de la clase:
+
+    En esta clase, aprendimos a trabajar localmente con Git y GitHub utilizando la consola/terminal.
+    Comenzamos configurando nuestra identidad en Git (nombre y correo electrónico) a través de los comandos git config --global user.name "Nombre" y git config --global user.email "correo@ejemplo.com".
+    Aprendimos a navegar por la consola/terminal utilizando comandos como pwd, ls, cd para movernos entre carpetas.
+    Se enfatizó la importancia de seguir buenas prácticas al nombrar archivos y carpetas, evitando caracteres especiales, espacios y usando solo letras minúsculas.
+    El próximo paso será clonar un repositorio de GitHub a nuestra computadora local usando el comando git clone.
+
+En resumen, esta clase se enfocó en preparar el entorno local para trabajar con Git y GitHub a través de la consola/terminal, configurando nuestra identidad y aprendiendo a navegar por el sistema de archivos de manera efectiva.

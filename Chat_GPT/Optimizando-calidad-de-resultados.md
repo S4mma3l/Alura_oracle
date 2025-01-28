@@ -181,3 +181,9 @@ Evita hacer preguntas complejas o que requieran respuestas detalladas. ChatGPT f
 
 Recuerda que estas son solo algunas sugerencias y que la redacción de los comandos puede variar según el contexto de la pregunta. ¡Intenta usar estas sugerencias como una guía general para mejorar la calidad de tus interacciones con ChatGPT!
 
+### Sintetizando textos en el idioma correcto
+
+Idioma del texto: Español
+Resumen de la clase en español:
+
+En esta lección, el instructor Christian Velasco muestra cómo utilizar el ChatGPT para resumir textos en diferentes idiomas, respetando el idioma original. Primero, prueba con un texto en alemán, pero el resumen inicial se genera en español. Para forzar que el resumen se genere en el idioma original, el instructor ajusta el prompt, indicando que respete el idioma del texto. Luego, prueba con un texto en francés y logra que el resumen se genere en ese idioma. El instructor explica que esta técnica es muy útil para automatizar procesos de traducción o resumen de textos, ya que permite controlar el formato de salida y el idioma del resultado.

@@ -308,3 +308,51 @@ Escrito en Markdown
 ### Linkedin: https://www.linkedin.com/school/aluracursos/
 
 Ahora, ¿qué tal editar tu archivo Readme y personalizarlo a tu manera? ¡Explica un poco más sobre tu proyecto, las herramientas utilizadas, el objetivo del proyecto, etc.! Y lo más importante, ¡comparte tu experiencia de aprendizaje con otras personas! =)
+
+### Para saber más: creando una cuenta en Vercel
+
+
+El primer paso para crear una cuenta en Vercel es acceder al sitio web de Vercel a través de este enlace y hacer clic en "Sign up".
+
+En la página de inicio de Vercel, encontrarás un botón de inicio de sesión y otro de registro "Sign Up", ambos en la esquina superior derecha.
+
+Después de hacer clic en "Sign up", verás una página como esta:
+
+En la página de registro de Vercel, encontrarás tres botones en el lado derecho de la página, con la primera opción para iniciar sesión con GitHub, la segunda opción con GitLab y la tercera opción con Bitbucket.
+
+Luego, haz clic en "continuar con GitHub" ¡y listo! ¡Tu cuenta ha sido creada! ¡Ahora solo tienes que utilizar los servicios de Vercel! :)
+
+### Haga lo que hicimos
+
+
+1) Creando un repositorio en GitHub
+
+En este ejercicio, aprenderás a crear un repositorio en GitHub para almacenar y gestionar los archivos de tu proyecto web. El objetivo es familiarizarte con el proceso de creación de repositorios y comprender la importancia de organizarlos de manera eficiente.
+
+2) Subiendo archivos a GitHub
+
+Después de crear el repositorio, tu siguiente paso es cargar los archivos de tu proyecto (HTML, CSS, imágenes) en GitHub. Este ejercicio te ayudará a comprender cómo añadir archivos a un repositorio y la importancia de organizar los archivos de manera eficiente.
+
+3) Visualizando archivos y preparándolos para su visualización
+
+El objetivo de este ejercicio es explorar los archivos de tu proyecto en GitHub y entender cómo prepararlos para que se muestren correctamente a los usuarios finales. Aprenderás a navegar por el repositorio y a visualizar los archivos de código.
+
+4) Hospedando tu proyecto en Vercel
+
+Este ejercicio tiene como objetivo enseñarte cómo alojar tu proyecto web en Vercel, una plataforma de alojamiento gratuita y rápida que permite que tu sitio sea accesible en internet. Aprenderás a conectar tu cuenta de GitHub con Vercel y a alojar tu proyecto allí.
+
+5) Verificando el alojamiento del proyecto
+
+Después de alojar tu proyecto en Vercel, debes verificar si todo se configuró correctamente y si el sitio está accesible públicamente. Este ejercicio se centra en probar el acceso a tu sitio alojado y en comprender la importancia de tener tu proyecto disponible en línea.
+
+6) Ajustes finales y comprobación de la responsividad
+
+El último ejercicio se centra en hacer ajustes finales en tu proyecto y verificar la responsividad del sitio en diferentes dispositivos. Esto es crucial para garantizar una buena experiencia de usuario en cualquier plataforma.
+
+En esta clase, aprendiste cómo:
+
+    Crear el primer repositorio en GitHub;
+    Subir el proyecto al repositorio;
+    Crear una cuenta en Vercel;
+    Poner el proyecto en línea y compartirlo con el mundo.
+

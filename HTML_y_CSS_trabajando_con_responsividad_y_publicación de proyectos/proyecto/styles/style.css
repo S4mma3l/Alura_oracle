@@ -1,0 +1,181 @@
+/* Importa las fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Define las variables CSS */:root {
+    --bg-color: #1D1616; /* Color de fondo */
+    --text-color: #EEEEEE; /* Color del texto */
+    --accent-color: #8E1616; /* Color de acento */
+    --font-krona: "Krona One", sans-serif; /* Define la fuente Krona One */
+    --font-montserrat: "Montserrat", sans-serif; /* Define la fuente Montserrat */
+    --font-size-base: 16px; /* Define el tamaño base de la fuente en píxeles */
+}
+
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-montserrat);
+    min-height: 100vh;
+    font-size: 1rem; /* 1rem = 16px (tamaño base) */
+}
+
+/* Estilos para los encabezados h1 */
+h1 {
+    text-align: center;
+    margin-top: 2rem; /* 2rem = 32px */
+    font-size: 2.5rem; /* 2.5rem = 40px */
+}
+
+/* Estilos para el texto destacado */.titulo_destacado {
+    color: var(--accent-color);
+    font-family: var(--font-krona);
+}
+
+/* Estilos para la sección de presentación */.presentacion {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre la imagen y el contenido */
+    align-items: center;
+    padding: 5rem 10rem; /* 5rem = 80px, 10rem = 160px */
+}
+
+/* Estilos para el contenido de la presentación */.presentacion_contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* 2rem = 32px */
+}
+
+/* Estilos para el título de la presentación */.presentacion_contenido_titulo {
+    font-size: 2.2rem; /* 2.2rem = 35.2px */
+    line-height: 1.2;
+}
+
+/* Estilos para el texto de la presentación */.presentacion_contenido_texto {
+    font-size: 1.2rem; /* 1.2rem = 19.2px */
+    line-height: 1.5;
+}
+
+/* Estilos para los enlaces de la presentación */.presentacion_enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* 1.5rem = 24px */
+}
+
+/* Estilos para el subtítulo de los enlaces de la presentación */.presentacion_enlaces_subtitulo {
+    font-size: 1.5rem; /* 1.5rem = 24px */
+    font-weight: 400;
+    font-family: var(--font-krona);
+    color: var(--accent-color);
+}
+
+/* Estilos para los enlaces individuales de la presentación */.presentacion_enlaces_link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem; /* 1rem = 16px */
+    width: 80%;
+    max-width: 280px;
+    background-color: transparent;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 1rem; /* 1rem = 16px */
+    border-radius: 0.5rem; /* 0.5rem = 8px */
+    font-weight: 600;
+    border: 2px solid var(--accent-color);
+}
+
+/* Estilos para la imagen de la presentación */.presentacion_imagen { /* Usamos la clase.presentacion_imagen */
+    width: 45%;
+    max-width: 740px;
+    border-radius: 1rem; /* 1rem = 16px */
+    height: auto;
+}
+
+/* Estilos para los iconos de redes sociales */.iconos_redes{
+    width: 1.25rem; /* 1.25rem = 20px */
+    height: auto;
+}
+
+/* Estilos adicionales para los botones de la presentación */.presentacion_enlaces_link span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    padding: 0.5rem; /* 0.5rem = 8px */
+    border-radius: 0.3rem; /* 0.3rem = 4.8px */
+}
+
+/* Estilos para el encabezado */.header{
+    padding: 2rem 0 0 15rem; /* 2rem = 32px, 15rem = 240px */
+}
+
+/* Estilos para el menú del encabezado */.header_menu {
+    display: flex;
+    gap: 5rem; /* Ajustamos el espacio entre los enlaces */
+    align-items: center;
+}
+
+/* Estilos para los enlaces del menú del encabezado */.header_menu_link{
+    font-family: var(--font-montserrat);
+    font-size: 1.5rem; /* 1.5rem = 24px */
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Estilos para los enlaces de la presentación al pasar el mouse */.presentacion_enlaces_link:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+/* Estilos para el texto del pie de página */.footer_texto {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 1rem; /* 1rem = 16px */
+    font-size: 1.2rem; /* 1.2rem = 19.2px */
+    font-family: var(--font-montserrat);
+}
+
+/* Media query para pantallas con un ancho máximo de 768px (tablets y móviles) */
+@media (max-width: 768px) {
+  :root {
+        --font-size-base: 14px; /* Ajusta el tamaño base de la fuente para pantallas pequeñas */
+    }
+
+    /* Ajustes para la sección de presentación */
+  .presentacion {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        text-align: center;
+        padding: 3rem 5rem; /* 3rem = 42px (con --font-size-base: 14px), 5rem = 70px */
+    }
+
+    /* Ajustes para el contenido de la presentación */
+  .presentacion_contenido {
+        width: 90%;
+    }
+
+    /* Ajustes para la imagen de la presentación */
+  .presentacion_imagen { /* Usamos la clase.presentacion_imagen */
+        width: 90%;
+        order: -1; /* La imagen se muestra primero */
+    }
+
+    /* Ajustes para el encabezado */
+  .header{
+        padding: 1rem; /* Reducimos el padding */
+    }
+
+    /* Ajustes para el menú del encabezado */
+  .header_menu {
+        flex-direction: column; /* Apila los enlaces verticalmente */
+        gap: 1rem; /* Reducimos el espacio entre los enlaces */
+    }
+}
